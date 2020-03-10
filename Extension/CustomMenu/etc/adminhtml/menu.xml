@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add 
+        id="Extension_CustomMenu::manager"
+         title="Grid Manager"
+          module="Extension_CustomMenu" 
+          sortOrder="10" 
+          resource="Extension_CustomMenu::manager"/>
+
+    	<add id="Extension_CustomMenu::add_row" 
+        title="Grid Manager" 
+        module="Extension_CustomMenu" 
+        sortOrder="20"
+        parent="Extension_CustomMenu::manager" 
+        action="grid/grid" 
+        resource="Extension_CustomMenu::add_row"/>
+    </menu>
+</config>
